@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./static/CSS/reset.css">
+    <link rel="stylesheet" href="./static/CSS/style.css">
+    <title>Who scored</title>
+</head>
+<body class="who-body">
+  <header>
+    <nav>
+        <ul>
+            <li><a href="./index.html" >Home</a></li>
+            <li><a href="./contactus.html">Contact Us</a></li>
+            <li><a href="./whoscored.html">Premier league</a></li>
+        </ul>
+    </nav>
+</header>
+    <main>
+    <section class="who-section">
+      <h4> Enter the year and program will generate who scored in this particular year most goals in Premier league (1930-2022)
+        (Please Consider, program will work in "next year's principe" if you type 1987 it will shows 1986/87 Seasons)
+      </h4>
+      <div class="who-main">
+        <div class="side-1">
+            <p>Enter the Year </p>
+            <input id="who-inp" type="numbers" placeholder="From 1930 till 2022">
+            <button id="who-btn" onclick="whoscored()">Show me the answer</button>
+            <button id="refresh" type="refresh" onclick="refresh()">Refresh Action </button>
+        </div>
+        <div class="side-2">
+            <h3 id="who-generator">
+
+            </h3>
+        </div>
+      </div>
+    </section>
+</main>
+<script src="./index.js">
+
+</script>
+</body>
+</html>
